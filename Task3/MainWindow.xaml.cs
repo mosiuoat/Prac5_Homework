@@ -51,14 +51,14 @@ namespace Task3
 		{
 			Tester.TestEq(Smallest(new int[] { 11, 77, 111, 99, 102, 99 }), 11);
 			Tester.TestEq(Smallest(new int[] { }), -1);
-			Tester.TestEq(Smallest(new int[] { -12, 5, 20 }), -12);
+			Tester.TestEq(Smallest(new int[] { 12, -5, 20 }), -1);
 			Tester.TestEq(Smallest(new int[] { 5 }), 5);
 			Tester.TestEq(Smallest(null), -1);
 			Tester.TestEq(Smallest(new int[] { 15, 8, 19, 20 }), 8);
 
 			Tester.TestEq(Largest(new int[] { 119, 77, 27, 111, 29 }), 119);
 			Tester.TestEq(Largest(new int[] { }), -1);
-			Tester.TestEq(Largest(new int[] { 127, -2 }), 127);
+			Tester.TestEq(Largest(new int[] { 127, -2 }), -1);
 			Tester.TestEq(Largest(new int[] { 101 }), 101);
 			Tester.TestEq(Largest(null), -1);
 			Tester.TestEq(Largest(new int[] { 192, 2929, 11, 222, 19 }), 2929);
